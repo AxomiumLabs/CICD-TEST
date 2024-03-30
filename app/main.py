@@ -5,4 +5,4 @@ app = FastAPI()
 
 @app.get("/")
 def test_funct():
-    return "CI/CD working....."
+    return {"messages":"Updated successfully...."}
