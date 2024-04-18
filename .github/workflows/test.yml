@@ -18,5 +18,5 @@ jobs:
           script: |
             sudo apt-get update
             sudo apt-get install -y python3-pip
-            pip3 install -r requirements.txt
+            pip3 install fastapi uvicorn
             uvicorn app.main:app --reload
