@@ -19,4 +19,4 @@ jobs:
             sudo apt-get update
             sudo apt-get install -y python3-pip
             pip3 install fastapi uvicorn
-            git clone https://github.com/AxomiumLabs/CICD-TEST.git
+            git pull origin main
