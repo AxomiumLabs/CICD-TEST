@@ -21,4 +21,5 @@ jobs:
             pip3 install fastapi uvicorn
             cd ./CICD-TEST
             git pull origin main
-            sudo uvicorn app.main:app --reload
+            sudo killall uvicorn
+            uvicorn app.main:app --reload
