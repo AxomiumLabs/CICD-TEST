@@ -52,4 +52,4 @@ jobs:
 
       - name: Scale node
         run: |
-          aws eks update-nodegroup-config --cluster-name my-eks-cluster --nodegroup-name my-node-group --scaling-config minSize=1,maxSize=5,desiredSize=0
+          aws eks update-nodegroup-config --cluster-name my-eks-cluster --nodegroup-name my-node-group --scaling-config minSize=0,maxSize=5,desiredSize=0
