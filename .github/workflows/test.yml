@@ -44,4 +44,4 @@ jobs:
 
       - name: Deploy to EKS
         run: |
-          kubectl set image deployment/my-deployment my-container=${{ secrets.DOCKER_HUB_USERNAME }}/testing_cicd:${{ github.sha }}
+          kubectl set image deployment/my-deployment testing-cicd-9vb25=${{ secrets.DOCKER_HUB_USERNAME }}/testing_cicd:${{ github.sha }}
