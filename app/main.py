@@ -5,4 +5,4 @@ app = FastAPI()
 
 @app.get("/")
 def test_funct():
-    return {"messages":"EKS setup new ......"}
+    return {"messages":"EKS setup new ......."}
