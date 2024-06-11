@@ -48,4 +48,4 @@ jobs:
 
       - name: Scale up
         run: |
-          kubectl scale deployment/my-deployment --replicas=2
+          kubectl scale deployment/my-deployment --replicas=1
