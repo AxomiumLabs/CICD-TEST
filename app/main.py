@@ -14,7 +14,7 @@ def test_get():
     
     # Get replicas of pods
     v1 = client.CoreV1Api()
-    pod_list = v1.list_namespaced_pod(namespace=host_name)
+    pod_list = v1.list_namespaced_pod(namespace="default")
     num_replicas = len(pod_list.items)
 
     # Prepare response headers
