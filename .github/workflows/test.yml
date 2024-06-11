@@ -49,3 +49,7 @@ jobs:
       - name: Scale up
         run: |
           kubectl scale deployment/my-deployment --replicas=6
+
+      - name: Scale node
+        run: |
+          aws eks update-nodegroup-config --cluster-name my-eks-cluster --nodegroup-name my-node-group --scaling-config minSize=1,maxSize=5,desiredSize=4
