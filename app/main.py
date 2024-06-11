@@ -5,4 +5,4 @@ app = FastAPI()
 
 @app.get("/")
 def test_funct():
-    return {"messages":"Pm2 setup"}
+    return {"messages":"EKS setup"}
