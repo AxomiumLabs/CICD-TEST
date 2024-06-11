@@ -8,4 +8,4 @@ app = FastAPI()
 def test_get():
     host_name=socket.gethostname()
     response_headers={"X-Pod-Hostname":host_name}
-    return {"message":"Hello EKS"},200,response_headers
+    return {"message":"Hello EKS scaled"},200,response_headers
